@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+/* Layout */
+.app {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #00adb5;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+}

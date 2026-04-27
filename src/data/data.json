@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "users": 1200,
+    "revenue": 45000,
+    "orders": 320,
+    "growth": 12
+  },
+  "chartData": [
+    {
+      "id": "1",
+      "name": "Jan",
+      "value": 400
+    },
+    {
+      "id": "2",
+      "name": "Feb",
+      "value": 800
+    },
+    {
+      "id": "3",
+      "name": "Mar",
+      "value": 600
+    },
+    {
+      "id": "4",
+      "name": "Apr",
+      "value": 1200
+    },
+    {
+      "id": "5",
+      "name": "May",
+      "value": 900
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Isha Raut",
+      "email": "ishaaraut65@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Rohan Ray",
+      "email": "rohanray577@gmail.com"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
