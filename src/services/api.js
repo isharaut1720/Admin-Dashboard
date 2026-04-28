@@ -1,7 +1,10 @@
-import axios from "axios";
+import data from "../data/data.json";
 
-const API = "http://localhost:5000";
+export const getStats = () =>
+  Promise.resolve({ data: data.stats });
 
-export const getStats = () => axios.get(`${API}/stats`);
-export const getChartData = () => axios.get(`${API}/chartData`);
-export const getUsers = () => axios.get(`${API}/users`);
+export const getChartData = () =>
+  Promise.resolve({ data: data.chartData });
+
+export const getUsers = () =>
+  Promise.resolve({ data: data.users });

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { getUsers } from "../services/api";
 
 export default function Orders({ darkMode }) {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/users").then(res => {
+    getUsers().then(res => {
       // 👉 Fake orders using users (for demo)
       const fakeOrders = res.data.map((user, index) => ({
         id: index + 1,
@@ -13,6 +13,7 @@ export default function Orders({ darkMode }) {
         amount: Math.floor(Math.random() * 1000),
         status: index % 2 === 0 ? "Completed" : "Pending"
       }));
+
       setOrders(fakeOrders);
     });
   }, []);
@@ -29,6 +30,7 @@ export default function Orders({ darkMode }) {
 
       <div style={{
         background: darkMode ? "#2c2c3e" : "white",
+        color: darkMode ? "white" : "black",
         padding: "20px",
         borderRadius: "12px",
         boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
